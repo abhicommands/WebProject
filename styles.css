@@ -1,0 +1,159 @@
+html {
+    font-size: 18px; /* Set the base font size to 16px */
+    line-height: 160%; /* Set the line height to 1.5 times the font size */
+    background-color: #333; /* Dark gray text */
+  }
+  body {
+    background-color: #e1f1bb; /* Light green background */ /* Change font to Comic Sans for a bit of ugliness */
+    padding: 20px; /* Add some space around the content */
+    width: 970px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid #9baa78;
+    border: 1px solid #333;
+    border-radius: 15px;
+    box-shadow: 1px 1px #ccc;
+  }
+  .subtitle{
+    font-size: 0.85em;
+    color: azure;
+    line-height: 99%;
+  }
+  #bigNav {
+    text-align: center;
+    background-color: #e8f3d9; /* A softer green background */
+    color: #333; /* Dark text for contrast */
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  #bigNav a {
+    color: #333; /* Dark text for contrast */
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+  }
+  
+  #bigNav a:hover {
+    background-color: #d4e4b1; /* Even lighter green on hover */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #bigNav a.active {
+    background-color: #b0c77a; /* A slightly darker green for active */
+    color: #fff; 
+    border-radius: 5px;
+  }
+  
+  /* You might want to soften the box shadow as well */
+  #bigNav a {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+  }
+  
+  a {
+    color: #00f; /* Blue links for a bit of ugliness */
+    text-decoration: none; /* Remove underline from links */
+  }
+  a:hover {
+      color: #f00;
+      background-color: #ccc; /* Change to your desired hover color */
+  }
+  div.Gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  div.item {
+      margin: px; /* Adjust as needed */
+      text-align: center; /* Center the captions */
+  }
+  img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Prevent images from stretching */
+    border: 5px solid #fff; /* Add white border around images */
+  }
+  h1 {
+    text-align: center;
+    color: #333; /* Dark gray headings */
+    background-color: #ec6a6a; /* Red background on headings */
+    padding: 20px; /* Add some space around the text in the headings */
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333; /* Dark gray headings */
+    background-color: #ddd; /* Light gray background on headings */
+    padding: 10px; /* Add some space around the text in the headings */
+  }
+  h3 {
+    color: #a42424; /* Light gray background on headings */
+    padding: 10px; /* Add some space around the text in the headings */
+  }
+  h4 {
+    text-emphasis: none;
+    color: #333; /* Dark gray headings */
+  
+  }
+  nav a {
+    margin-right: 20px; /* Space out the navigation links */
+    color: #00f; /* Blue links for a bit of ugliness */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  table {
+    width: 100%; /* Expand table to full width of its container */
+    border-collapse: collapse; /* Remove gaps between cells */
+    border-radius: 5px;  /* Optional: Add rounded corners for a modern look */
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid #ddd; /* Consistent, light border */
+  }
+  
+  th {
+    background-color: #e8f3d9; /* Light green header background */
+    font-weight: bold;     
+    padding: 15px;          /* More padding within header cells */
+    text-align: left;       /* Align header text to the left */
+  }
+  
+  td {
+    padding: 12px;          /* Padding within data cells */
+    border-top: none;       /* Remove top borders within rows */
+    border-bottom: none;    
+  }
+  
+  tr:nth-child(even) { 
+    background-color: #f8f8f8; /* Very subtle alternating row color */
+  }
+  
+  tr:hover { 
+    background-color: #e8f3d9; /* Light green on hover */
+  }
+  
+  
+  #smallNav {
+    background-color: #f0f0f0;  /* A light background color */
+    color: #333;                /* Dark text for contrast */
+    padding: 10px; 
+    border-radius: 8px;         /* Slightly rounded corners */
+    text-align: center;         /* Center the links */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* A subtle shadow */
+  }
+  
+  #smallNav a {
+    color: #333;                /* Dark link color */
+    text-decoration: none;      /* Remove the underline */
+    padding: 8px 15px;          /* Add padding around links */
+    margin: 0 5px;              /* Space between links */ 
+  }
+  
+  #smallNav a:hover {
+    background-color: #d9d9d9;  /* Light gray background on hover */
+    border-radius: 5px;         /* Rounded corners on hover */
+  }
+  
