@@ -14,6 +14,12 @@ html {
     border-radius: 15px;
     box-shadow: 1px 1px #ccc;
   }
+  #headerBar {
+    display: flex; /* Allow items inside to arrange side-by-side */
+    align-items: center; /* Vertically center the items*/
+    justify-content: space-between; /* Put the logo on the left and nav on the right */
+    padding: 15px;  /* Add some padding around the elements in the header */
+  }
   .subtitle{
     font-size: 0.85em;
     color: azure;
@@ -31,7 +37,7 @@ html {
     color: #333; /* Dark text for contrast */
     text-decoration: none;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 0 10px;
   }
   
@@ -77,8 +83,6 @@ html {
   h1 {
     text-align: center;
     color: #333; /* Dark gray headings */
-    background-color: #ec6a6a; /* Red background on headings */
-    padding: 20px; /* Add some space around the text in the headings */
   }
   
   h2 {
@@ -156,4 +160,88 @@ html {
     background-color: #d9d9d9;  /* Light gray background on hover */
     border-radius: 5px;         /* Rounded corners on hover */
   }
-  
+  /* Section Styling */
+section.lead,
+section.showcase {
+    background-color: #fff; /* Keep white background for clean sections */
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow is fine */
+}
+
+h2.primary-statement { 
+    color: #003459; /* Consider a darker green like #005073 to align with your palette */
+}
+
+p.secondary-statement {
+    color: #555;        /* Neutral gray works well */
+    font-size: 16px;
+}
+
+.lead-display img { /* No changes needed here */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Micro Reviews Section */
+#microReviewsSection { /*  No big changes needed here */
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.microReview { /*  No big changes needed here */
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.microReview:last-child {
+    border-bottom: none;
+}
+
+.microReview h3 {
+    color: #005073; /* Use the darker green for consistency*/
+    margin-bottom: 5px;
+}
+
+.microReview p { 
+    color: #666; /* Neutral gray is fine */
+}
+
+#logo img {
+  width: 100px;
+}
+/* Showcase */ 
+.showcase-container { /*  No changes needed here */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: #e8f3d9;
+}
+
+.showcase-item { 
+
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.showcase-item h3 {
+    color: #005073; /* Consistent green */
+}
+
+.showcase-item p {
+    color: #333; /* Dark gray works well */
+}
+
+/* Footer */ 
+#footer {  /* Consider a softer gray for the footer text */
+    text-align: center;
+    margin-top: 20px;
+    color: #999;  
+    font-size: 14px;
+}
