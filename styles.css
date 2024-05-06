@@ -199,8 +199,7 @@ p.secondary-statement {
 }
 #mapid {
   width: 700px;
-  height: 700px;
-  border: solid #bababa 1px;
+  height: 500px;
 }
 .leaflet-tile {
   border: none;

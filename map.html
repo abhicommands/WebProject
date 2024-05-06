@@ -8,7 +8,41 @@
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
     <style>
         #mapid {
-            height: 1200px;
+            width: 700px;
+            /* Adjusted width */
+            height: 500px;
+            /* Adjusted height */
+            margin: 20px auto;
+            /* Centering the map */
+        }
+
+        .leaflet-container {
+            background: #fff;
+            /* Ensures that the map background is white */
+        }
+
+        .leaflet-marker-icon,
+        .leaflet-marker-shadow,
+        .leaflet-div-icon {
+            border: none !important;
+            /* Remove borders */
+            box-shadow: none !important;
+            /* Remove box shadows */
+            background: transparent !important;
+            /* Ensures no background color */
+            padding: 0 !important;
+            /* Removes padding */
+        }
+
+        .leaflet-marker-pane .leaflet-pane,
+        .leaflet-marker-pane .leaflet-layer,
+        .leaflet-marker-pane div {
+            border: none !important;
+            /* Ensures no borders */
+            box-shadow: none !important;
+            /* Removes any box shadows */
+            clip-path: none !important;
+            /* Removes clip paths if any */
         }
     </style>
 </head>
@@ -20,16 +54,19 @@
                 <img src="imgs/logo.svg" alt="Logo">
             </a>
         </div>
-        <h1>Tabla and Technology</h1>
+        <h1>Path To Tabla</h1>
         <nav id="bigNav">
             <a href="index.html">Home</a>
-            <a href="reviews.html">reviews</a>
             <a href="gallery.html">Gallery</a>
+            <a href="reviews.html">Reviews</a>
+            <a href="map.html">Map</a>
+            <a href="essay.html">Essay</a>
+            <a href="extra.html">Extra</a>
             <a href="about.html">About</a>
         </nav>
     </header>
     <h2>Opportunities you get as a Tabla Player.</h2>
-    <p>As a tabla player, it is known by tradition that a complete tabla player must fullfill 3 distinct qualities.
+    <p>As a tabla player, it is known by tradition that a complete tabla player must fulfill 3 distinct qualities:
     <ul>
         <li>A good student</li>
         <li>A good performer</li>
@@ -42,33 +79,29 @@
         concerts.
     </p>
     <h2>Map of all the places I have played concerts in.</h2>
-    <div id="mapid">
-        <script>
-            // Create the map
-            var mymap = L.map('mapid').setView([40.0583, -74.4057], 9);
-            // add 
-            // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            // }).addTo(mymap);
-            L.tileLayer('http://{s}.tile.stamen.com/{z}/{x}/{y}.png', {
-                attribution: 'Map tiles by Stamen Design (http://stamen.com)',
-                subdomains: 'abcd',
-                minZoom: 0,
-                maxZoom: 20,
-                ext: 'png'
-            }).addTo(mymap);
-            // Add a marker with a popup
-            // add new jersey
-            var marker = L.marker([40.0583, -74.4057]).addTo(mymap);
-            marker.bindPopup("<b>New Jersey!</b>").openPopup();
-        </script>
-    </div>
-    <style>
-        .leaflet-tile {
-            border: none;
-        }
-    </style>
+    <div id="mapid"></div>
+    <script>
+        var mymap = L.map('mapid').setView([40.50082, -74.4474], 9); // Adjusted central point for better centering
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(mymap);
 
+        // Adding multiple markers for specified locations
+        var locations = [
+            { name: "4 Railroad Avenue, Somerset NJ", coords: [40.4976, -74.4885] },
+            { name: "Princeton University", coords: [40.3431, -74.6515] },
+            { name: "Rutgers University Nicholas Music Center", coords: [40.5257, -74.4638] },
+            { name: "NJIT Kupfrian Hall", coords: [40.7432, -74.1785] },
+            { name: "Sri Guruvaayoorappan Temple", coords: [40.4644, -74.3288] },
+            { name: "Sri Venkateswara Temple", coords: [40.50082, -74.4474] },
+            { name: "Ganesh Temple NYC", coords: [40.7510, -73.8146] }
+        ];
+
+        locations.forEach(function (location) {
+            var marker = L.marker(location.coords).addTo(mymap);
+            marker.bindPopup("<b>" + location.name + "</b>");
+        });
+    </script>
 </body>
 
 </html>
