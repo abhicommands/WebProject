@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
+    <style>
+        #mapid {
+            height: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="headerBar">
+        <div id="logo">
+            <a href="index.html">
+                <img src="imgs/logo.svg" alt="Logo">
+            </a>
+        </div>
+        <h1>Tabla and Technology</h1>
+        <nav id="bigNav">
+            <a href="index.html">Home</a>
+            <a href="reviews.html">reviews</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+    <h2>Opportunities you get as a Tabla Player.</h2>
+    <p>As a tabla player, it is known by tradition that a complete tabla player must fullfill 3 distinct qualities.
+    <ul>
+        <li>A good student</li>
+        <li>A good performer</li>
+        <li>A good teacher</li>
+    </ul>
+    </p>
+    <p>In essence this is the basic tradition and guidelines and hence the part about being a performer the best part is
+        the ability to travel to different places and express your music to different people through concerts. Below is
+        a map of all places that I have played many different concerts in and the date and time of when I did the
+        concerts.
+    </p>
+    <h2>Map of all the places I have played concerts in.</h2>
+    <div id="mapid">
+        <script>
+            // Create the map
+            var mymap = L.map('mapid').setView([40.0583, -74.4057], 9);
+            // add 
+            // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            //     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            // }).addTo(mymap);
+            L.tileLayer('http://{s}.tile.stamen.com/{z}/{x}/{y}.png', {
+                attribution: 'Map tiles by Stamen Design (http://stamen.com)',
+                subdomains: 'abcd',
+                minZoom: 0,
+                maxZoom: 20,
+                ext: 'png'
+            }).addTo(mymap);
+            // Add a marker with a popup
+            // add new jersey
+            var marker = L.marker([40.0583, -74.4057]).addTo(mymap);
+            marker.bindPopup("<b>New Jersey!</b>").openPopup();
+        </script>
+    </div>
+    <style>
+        .leaflet-tile {
+            border: none;
+        }
+    </style>
+
+</body>
+
+</html>

@@ -1,247 +1,215 @@
 html {
-    font-size: 18px; /* Set the base font size to 16px */
-    line-height: 160%; /* Set the line height to 1.5 times the font size */
-    background-color: #333; /* Dark gray text */
-  }
-  body {
-    background-color: #e1f1bb; /* Light green background */ /* Change font to Comic Sans for a bit of ugliness */
-    padding: 20px; /* Add some space around the content */
-    width: 970px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    border: 1px solid #9baa78;
-    border: 1px solid #333;
-    border-radius: 15px;
-    box-shadow: 1px 1px #ccc;
-  }
-  #headerBar {
-    display: flex; /* Allow items inside to arrange side-by-side */
-    align-items: center; /* Vertically center the items*/
-    justify-content: space-between; /* Put the logo on the left and nav on the right */
-    padding: 15px;  /* Add some padding around the elements in the header */
-  }
-  .subtitle{
-    font-size: 0.85em;
-    color: azure;
-    line-height: 99%;
-  }
-  #bigNav {
-    text-align: center;
-    background-color: #e8f3d9; /* A softer green background */
-    color: #333; /* Dark text for contrast */
-    padding: 15px;
-    overflow: hidden;
-  }
-  
-  #bigNav a {
-    color: #333; /* Dark text for contrast */
-    text-decoration: none;
-    display: inline-block;
-    padding: 10px 10px;
-    margin: 0 10px;
-  }
-  
-  #bigNav a:hover {
-    background-color: #d4e4b1; /* Even lighter green on hover */
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  #bigNav a.active {
-    background-color: #b0c77a; /* A slightly darker green for active */
-    color: #fff; 
-    border-radius: 5px;
-  }
-  
-  /* You might want to soften the box shadow as well */
-  #bigNav a {
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
-  }
-  
-  a {
-    color: #00f; /* Blue links for a bit of ugliness */
-    text-decoration: none; /* Remove underline from links */
-  }
-  a:hover {
-      color: #f00;
-      background-color: #ccc; /* Change to your desired hover color */
-  }
-  div.Gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  div.item {
-      margin: px; /* Adjust as needed */
-      text-align: center; /* Center the captions */
-  }
-  img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Prevent images from stretching */
-    border: 5px solid #fff; /* Add white border around images */
-  }
-  h1 {
-    text-align: center;
-    color: #333; /* Dark gray headings */
-  }
-  
-  h2 {
-    text-align: center;
-    color: #333; /* Dark gray headings */
-    background-color: #ddd; /* Light gray background on headings */
-    padding: 10px; /* Add some space around the text in the headings */
-  }
-  h3 {
-    color: #a42424; /* Light gray background on headings */
-    padding: 10px; /* Add some space around the text in the headings */
-  }
-  h4 {
-    text-emphasis: none;
-    color: #333; /* Dark gray headings */
-  
-  }
-  nav a {
-    margin-right: 20px; /* Space out the navigation links */
-    color: #00f; /* Blue links for a bit of ugliness */
-    text-decoration: none; /* Remove underline from links */
-  }
-  
-  table {
-    width: 100%; /* Expand table to full width of its container */
-    border-collapse: collapse; /* Remove gaps between cells */
-    border-radius: 5px;  /* Optional: Add rounded corners for a modern look */
-  }
-  
-  table,
-  th,
-  td {
-    border: 1px solid #ddd; /* Consistent, light border */
-  }
-  
-  th {
-    background-color: #e8f3d9; /* Light green header background */
-    font-weight: bold;     
-    padding: 15px;          /* More padding within header cells */
-    text-align: left;       /* Align header text to the left */
-  }
-  
-  td {
-    padding: 12px;          /* Padding within data cells */
-    border-top: none;       /* Remove top borders within rows */
-    border-bottom: none;    
-  }
-  
-  tr:nth-child(even) { 
-    background-color: #f8f8f8; /* Very subtle alternating row color */
-  }
-  
-  tr:hover { 
-    background-color: #e8f3d9; /* Light green on hover */
-  }
-  
-  
-  #smallNav {
-    background-color: #f0f0f0;  /* A light background color */
-    color: #333;                /* Dark text for contrast */
-    padding: 10px; 
-    border-radius: 8px;         /* Slightly rounded corners */
-    text-align: center;         /* Center the links */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* A subtle shadow */
-  }
-  
-  #smallNav a {
-    color: #333;                /* Dark link color */
-    text-decoration: none;      /* Remove the underline */
-    padding: 8px 15px;          /* Add padding around links */
-    margin: 0 5px;              /* Space between links */ 
-  }
-  
-  #smallNav a:hover {
-    background-color: #d9d9d9;  /* Light gray background on hover */
-    border-radius: 5px;         /* Rounded corners on hover */
-  }
-  /* Section Styling */
-section.lead,
-section.showcase {
-    background-color: #fff; /* Keep white background for clean sections */
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow is fine */
+  font-size: 20px; /* Set the base font size to 16px */
+  line-height: 160%; /* Set the line height to 1.5 times the font size */
+  background-color: #60752f; /* Light green background */
+}
+body {
+  background-color: #e1f1bb; /* Light green background */ /* Change font to Comic Sans for a bit of ugliness */
+  padding: 20px; /* Add some space around the content */
+  width: 980px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #9baa78;
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: 1px 1px #ccc;
+}
+#headerBar {
+  display: flex; /* Allow items inside to arrange side-by-side */
+  align-items: center; /* Vertically center the items*/
+  justify-content: space-between; /* Put the logo on the left and nav on the right */
+  padding: 10px; /* Add some padding around the elements in the header */
+}
+.subtitle {
+  font-size: 0.85em;
+  color: azure;
+  line-height: 99%;
+}
+#bigNav {
+  text-align: center;
+  background-color: #e8f3d9; /* A softer green background */
+  color: #333; /* Dark text for contrast */
+  padding: 15px;
+  overflow: hidden;
 }
 
-h2.primary-statement { 
-    color: #003459; /* Consider a darker green like #005073 to align with your palette */
+#bigNav a {
+  color: #333; /* Dark text for contrast */
+  text-decoration: none;
+  display: inline-block;
+  padding: 3px 3px;
+  margin: 0 10px;
+}
+
+#bigNav a:hover {
+  background-color: #d4e4b1; /* Even lighter green on hover */
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+}
+
+#bigNav a.active {
+  background-color: #b0c77a; /* A slightly darker green for active */
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* You might want to soften the box shadow as well */
+#bigNav a {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: #00f; /* Blue links for a bit of ugliness */
+  text-decoration: none; /* Remove underline from links */
+}
+a:hover {
+  color: #f00;
+  background-color: #ccc; /* Change to your desired hover color */
+}
+div.Gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+div.item {
+  margin: px; /* Adjust as needed */
+  text-align: center; /* Center the captions */
+}
+img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Prevent images from stretching */
+  border: 5px solid #fff; /* Add white border around images */
+}
+h1 {
+  text-align: center;
+  color: #333; /* Dark gray headings */
+  padding: 20px;
+  background-color: #e8f3d9;
+}
+
+h2 {
+  text-align: center;
+  color: #333; /* Dark gray headings */
+  background-color: #ddd; /* Light gray background on headings */
+  padding: 10px; /* Add some space around the text in the headings */
+}
+h3 {
+  color: #a42424; /* Light gray background on headings */
+  padding: 10px; /* Add some space around the text in the headings */
+}
+h4 {
+  text-emphasis: none;
+  color: #333; /* Dark gray headings */
+}
+nav a {
+  margin-right: 20px; /* Space out the navigation links */
+  color: #00f; /* Blue links for a bit of ugliness */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Section Styling */
+section.lead,
+section.showcase {
+  background-color: #fff; /* Keep white background for clean sections */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow is fine */
+}
+
+h2.primary-statement {
+  color: #003459; /* Consider a darker green like #005073 to align with your palette */
 }
 
 p.secondary-statement {
-    color: #555;        /* Neutral gray works well */
-    font-size: 16px;
+  color: #555; /* Neutral gray works well */
+  font-size: 16px;
 }
 
-.lead-display img { /* No changes needed here */
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.lead-display img {
+  /* No changes needed here */
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /* Micro Reviews Section */
-#microReviewsSection { /*  No big changes needed here */
-    background-color: #fff;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+#microReviewsSection {
+  /*  No big changes needed here */
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.microReview { /*  No big changes needed here */
-    border-bottom: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+.microReview {
+  /*  No big changes needed here */
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .microReview:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .microReview h3 {
-    color: #005073; /* Use the darker green for consistency*/
-    margin-bottom: 5px;
+  color: #005073; /* Use the darker green for consistency*/
+  margin-bottom: 5px;
 }
 
-.microReview p { 
-    color: #666; /* Neutral gray is fine */
+.microReview p {
+  color: #666; /* Neutral gray is fine */
 }
 
 #logo img {
-  width: 100px;
+  width: 80px;
 }
-/* Showcase */ 
-.showcase-container { /*  No changes needed here */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    background: #e8f3d9;
+/* Showcase */
+.showcase-container {
+  /*  No changes needed here */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background: #e8f3d9;
 }
 
-.showcase-item { 
-
-    padding: 10px;
-    border-radius: 8px;
+.showcase-item {
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .showcase-item h3 {
-    color: #005073; /* Consistent green */
+  color: #005073; /* Consistent green */
 }
 
 .showcase-item p {
-    color: #333; /* Dark gray works well */
+  color: #333; /* Dark gray works well */
+}
+.video-section {
+  margin: 30px;
+  padding: 30px;
 }
 
-/* Footer */ 
-#footer {  /* Consider a softer gray for the footer text */
-    text-align: center;
-    margin-top: 20px;
-    color: #999;  
-    font-size: 14px;
+.youtube-video {
+  width: 80%; /* Adjust width as per requirement */
+  height: 450px; /* Adjust height as per requirement */
+  margin-bottom: 10px;
+}
+#mapid {
+  width: 700px;
+  height: 700px;
+  border: solid #bababa 1px;
+}
+.leaflet-tile {
+  border: none;
+}
+/* Footer */
+#footer {
+  /* Consider a softer gray for the footer text */
+  text-align: center;
+  margin-top: 20px;
+  color: #999;
+  font-size: 14px;
 }
