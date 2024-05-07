@@ -4,49 +4,173 @@
 <head>
     <title>Final Project</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .main-content {
+            float: left;
+            width: 70%;
+            /* Ensure width calculations are based on parent width */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar {
+            float: right;
+            width: 30%;
+            /* Ensure width calculations are based on parent width */
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .review-container::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
 </head>
 
 <body>
-    <header id="headerBar">
-        <div id="logo">
-            <a href="index.html">
-                <img src="imgs/logo.svg" alt="Logo">
-            </a>
-        </div>
-        <h1>Path To Tabla</h1>
-        <nav id="bigNav">
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="map.html">Map</a>
-            <a href="essay.html">Essay</a>
-            <a href="extra.html">Extra</a>
-            <a href="about.html">About</a>
-        </nav>
-    </header>
-    <h1>Tabla Learning Resources Reviews</h1>
-
-    <div class="review">
-        <img src="imgs/library.jpeg" alt="The Digital Library Image">
-        <h2>The Digital Library by Pt. Swapan Chaudhuri</h2>
-        <p>This online library is a great resource for tabla enthusiasts to learn different rare compositions of all
-            legendary tabla artists throughout history. It also includes videos to help students learn the compositions
-            in a better way, just as a face-to-face teacher would. The library covers various styles such as Punjab
-            Gharana, Delhi Gharana, and Farukhabad Gharana. However, it currently only allows compositions verified
-            through Pt. Swapan Chaudhuri, and doesn't accept contributions from other artists. If the library addressed
-            this, it would be an even greater resource for the tabla community.</p>
+    <div class="headerDiv">
+        <header id="headerBar">
+            <div id="logo">
+                <a href="index.html">
+                    <img src="imgs/logo.svg" alt="Logo">
+                </a>
+            </div>
+            <h1>Path To Tabla</h1>
+            <nav id="bigNav">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="map.html">Map</a>
+                <a href="essay.html">Essay</a>
+                <a href="extra.html">Extra</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
     </div>
 
-    <div class="review">
-        <img src="imgs/tihai.jpeg" alt="The Digital Library Image">
-        <h2>Tihaai - Quintessence of Indian Percussive Arts by Shri Prabhakar Betrabet</h2>
-        <p>This book by Shri Prabhakar Betrabet and Shri Sandeep Hattangady is a valuable resource for learning how to
-            compose and play tihais, a
-            fundamental concept in Indian classical music. The book offers a clear and practical approach to mastering
-            this essential skill. It includes a CD with recordings of your teacher's senior students demonstrating the
-            concepts, making it even more helpful for students. However, the title may be a bit misleading, as over half
-            the book discusses your teacher's experiences as a musician rather than focusing solely on tihais.
-            Nevertheless, the content on tihais is excellent and provides valuable insights for tabla players.</p>
+    <div class="review-container">
+        <div class="main-content">
+            <h1>Tabla Learning Resources Reviews</h1>
+            <div class="review">
+                <img src="imgs/library.jpeg" alt="The Digital Library Image">
+                <h2>The Digital Library by Pt. Swapan Chaudhuri</h2>
+                <p>This online library is a great resource for tabla enthusiasts to learn different rare compositions of
+                    all
+                    legendary tabla artists throughout history. It also includes videos to help students learn the
+                    compositions
+                    in a better way, just as a face-to-face teacher would. The library covers various styles such as
+                    Punjab
+                    Gharana, Delhi Gharana, and Farukhabad Gharana. However, it currently only allows compositions
+                    verified
+                    through Pt. Swapan Chaudhuri, and doesn't accept contributions from other artists. If the library
+                    addressed
+                    this, it would be an even greater resource for the tabla community.</p>
+            </div>
+            <div class="review">
+                <img src="imgs/tihai.jpeg" alt="The Digital Library Image">
+                <h2>Tihaai - Quintessence of Indian Percussive Arts by Shri Prabhakar Betrabet</h2>
+                <p>This book by Shri Prabhakar Betrabet and Shri Sandeep Hattangady is a valuable resource for learning
+                    how
+                    to
+                    compose and play tihais, a fundamental concept in Indian classical music. The book offers a clear
+                    and
+                    practical
+                    approach to mastering this essential skill. It includes a CD with recordings of your teacher's
+                    senior
+                    students
+                    demonstrating the concepts, making it even more helpful for students. However, the title may be a
+                    bit
+                    misleading,
+                    as over half the book discusses your teacher's experiences as a musician rather than focusing solely
+                    on
+                    tihais.
+                    Nevertheless, the content on tihais is excellent and provides valuable insights for tabla players.
+                </p>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div id="microReviewsSection">
+                <h2>Want to learn how to play and succeed in Tabla: Check out these websites!</h2>
+                <div id="microReviewsContainer">
+                    <div class="microReview">
+                        <a href="https://www.tablalegacy.com" target="_blank">
+                            <h3><i class="fa-solid fa-user-graduate"></i> Tabla Legacy</h3>
+                        </a>
+                        <p>
+                            For tabla enthusiasts, this resource offers comprehensive theoretical knowledge essential
+                            for
+                            tabla
+                            examinations, helping to inspire and further push musical boundaries.
+                        </p>
+                    </div>
+                    <div class="microReview">
+                        <a href="http://madhyam.us" target="_blank">
+                            <h3><i class="fa-solid fa-user-graduate"></i> Madhyam (SAMVED)</h3>
+                        </a>
+                        <p>
+                            Known as SAMVED exam board, Madhyam facilitates registration for tabla examinations,
+                            catering to
+                            students interested in formally testing their tabla skills.
+                        </p>
+                    </div>
+                    <div class="microReview">
+                        <a href="https://abgmvm.org" target="_blank">
+                            <h3><i class="fa-solid fa-user-graduate"></i> ABGMVM</h3>
+                        </a>
+                        <p>
+                            The first musical examination board in India, offering serious students the opportunity to
+                            pursue
+                            Bachelor’s and Master’s degrees in tabla.
+                        </p>
+                    </div>
+                    <div class="microReview">
+                        <a href="https://www.ipassio.com/tabla-lessons" target="_blank">
+                            <h3><i class="fa-solid fa-drum"></i> iPassio Tabla Lessons</h3>
+                        </a>
+                        <p>
+                            Provides online tabla classes with personal and group sessions, suitable for students unable
+                            to
+                            attend in-person lessons.
+                        </p>
+                    </div>
+                    <div class="microReview">
+                        <a href="https://youtube.com/playlist?list=PLCDy4OQZ6LclRucj5WnjWkpMQZnm_vzC7" target="_blank">
+                            <h3><i class="fa-solid fa-drum"></i> YouTube Tabla Playlist</h3>
+                        </a>
+                        <p>
+                            A comprehensive playlist for self-taught students, featuring major rhythm patterns and
+                            exercises
+                            to
+                            improve tabla skills.
+                        </p>
+                    </div>
+                    <div class="microReview">
+                        <a href="https://www.lessonface.com/apply/tabla-class-samir-chatterjee" target="_blank">
+                            <h3><i class="fa-solid fa-drum"></i> Lessonface with Pt. Samir Chatterjee</h3>
+                        </a>
+                        <p>
+                            Learn tabla from renowned artist Pt. Samir Chatterjee through live, in-person classes—ideal
+                            for
+                            serious students looking to deepen their expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        &copy; 2024 By Abhinav's Tabla Website | All Rights Reserved.
     </div>
 
 </body>
